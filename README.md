@@ -4,4 +4,8 @@
 
 **Some of the technologies used were Html, Css, javascript, Node, Java**
 
-<img src="images/screenshot1.PNG">
+[Visit Site](https://sbullard.github.io/password-website/)
+
+---
+
+<p align="center"><img src="images/screenshot1.PNG" max-width="600px"></p>
