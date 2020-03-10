@@ -1,0 +1,64 @@
+/*Pumpkin*/
+button{
+    color:#fff;
+    background-color:#795548;
+    border:none;
+    box-shadow: 0 3px 5px #344152;
+}
+
+#themeMenuBtn{
+    border:none;
+}
+
+#themeMenuBtn > div{
+    background: #795548;
+}
+
+#cp{
+    box-shadow: 0 10px 15px #3E2723;
+}
+
+header{
+    box-shadow: 0 5px 10px #3E2723;
+}
+.generatePassBtnDisabled{
+    color:#999999;
+    background-color:#3E2723;
+}
+
+.primaryColorTheme{
+    color:#795548;
+    background:#FFA726;
+}
+
+.secondaryColorTheme{
+    color:#3E2723;
+    background:#FFA726;
+    box-shadow: 0px 3px 5px #3E2723;
+    border:none;
+}
+
+.accentColorTheme{
+    Background:#4CAF50;
+}
+
+.textDark{
+    color:#795548;
+}
+.textLight{
+    color:#ffffff;
+}
+
+.col1Theme{
+    color:#795548;
+    background-color:#FFCC80;
+}
+
+.col2Theme{
+    color:#795548;
+    background-color:#FFE0B2;
+}
+
+#disclaimer{
+    color:#795548;
+}

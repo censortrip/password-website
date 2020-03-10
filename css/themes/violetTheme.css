@@ -1,0 +1,46 @@
+/*Violet*/
+button{
+    color:#fff;
+    background-color:#061826;
+    border:none;
+    box-shadow: 0 3px 5px #344152;
+}
+
+#themeMenuBtn{
+    border:none;
+}
+
+#themeMenuBtn > div{
+    background: #fff;
+}
+
+.primaryColorTheme{
+    background:#9C27B0;
+    color:#fff;
+}
+
+.secondaryColorTheme{
+    background:#7B1FA2;
+    color:#fff;
+}
+
+.accentColorTheme{
+    Background:#B71C1C;
+}
+
+.textDark{
+    color:#061826;
+}
+.textLight{
+    color:#ffffff;
+}
+
+.col1Theme{
+    color:#061826;
+    background-color:#CE93D8;
+}
+
+.col2Theme{
+    color:#061826;
+    background-color:#E1BEE7;
+}

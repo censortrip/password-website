@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fast Password Generator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link id="colorTheme" rel="stylesheet" href="css/themes/indigoTheme.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="body">
+
+<div id="wrapper">
+
+    <header class="text-center primaryColorTheme">
+
+        <!--input type="image" id="menuBtn" onclick="toggleCP()" src="images/menu_btn_small2.png" alt="Menu Button" /-->
+        <div id="themeMenuBtn" onclick="toggleCP()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div id="cp" class="primaryColorTheme">
+            <h4>Themes</h4>
+            <button id="indigo"    class="themeBtn">Indigo</button><br />
+            <button id="violet"    class="themeBtn">Violet</button><br />
+            <button id="ocean"     class="themeBtn">Ocean</button><br />
+            <button id="appSynth"  class="themeBtn">AppSynth</button><br />
+            <button id="crimson"   class="themeBtn">Crimson</button><br />
+            <button id="pumpkin"   class="themeBtn">Pumpkin</button><br />
+            <button id="boring"    class="themeBtn">Boring</button>
+        </div>
+        <div class="container" >
+            <h2 id="logo">Fast Password Generator</h2>
+        </div>
+    </header>
+
+    <div id="main-content" class="container">
+        <div id="column_container" class="border row ">
+
+            <div id="col1" class="sharedColumnStyles col1Theme border col-sm-6">
+
+                <h3 id="script-message" class="textDark">Please Enable Javascript To Continue</h3>
+                <h3 class="textDark">Individual Password</h3>
+
+                <input id="passwordText" class="text-center secondaryColorTheme" readonly="readonly" type="text" /><br /><br /><br />
+
+                <form id="myForm"  class="text-center"  hidden><br />
+                    <div id="checkboxes" class="text-left">
+                        <label class="labels" for="selectPassLength">Password Length</label>
+                        <select id="selectPassLength" name="selectPassLength">
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="75">75</option>
+                            <option value="100">100</option>
+                            <option value="250">250</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                        </select><br /><br />
+
+                        <input id="capital" type="checkbox" name="capital"  checked />
+                        <label class="labels" for="capital">Capital Letters (A-Z)</label><br /><br />
+
+                        <input id="lowercase" type="checkbox" name="lowercase"  checked />
+                        <label class="labels" for="lowercase">Lowercase Letters (a-z)</label>	<br /><br />
+
+                        <input id="numbers" type="checkbox"  name="numbers" checked />
+                        <label class="labels" for="numbers">Integers (0-9)</label><br /><br />
+
+                        <input id="symbols" type="checkbox"  name="symbols"  checked />
+                        <label class="labels" for="symbols">Symbols</label><br /><br />
+                    </div><br /><br />
+                    <!--NOTE SETTING type to button prevents submit and page reload-->
+                    <button id="singlePassBtn"  type="button" class="generatePassBtnActive" value="Generate Password" disabled>Generate Password</button>
+                </form>
+
+                <div class="text-center copySaveButtons">
+                    <button id="copyClipboard2" class="smallBtnDisabled" value="copyClipboard" disabled>Select All</button>
+                    <button id="saveToFile2"    class="smallBtnDisabled" value="saveToFile" disabled>Save To File</button>
+                </div>
+
+                <div id="play-badge">
+                    <a href="https://play.google.com/store/apps/details?id=com.appsynthtech.fastpasswordgeneratorfree">
+                        <img id="google_play_badge" alt="Android app on Google Play"
+                             src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="col2" class="sharedColumnStyles col2Theme border col-sm-6" >
+
+                <div id="multiplePasswords"  class="text-center ">
+                    <h3 class="textDark">Multiple Passwords</h3>
+                    <textarea id="multiplePasswordWindow" class="secondaryColorTheme" readonly></textarea>
+                </div>
+
+                <div id="multipassBox" >
+                        <select id="selectNumberOfPasswords" name="selectNumberOfPasswords">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="75">75</option>
+                            <option value="100">100</option>
+                        </select>
+                        Passwords, Length
+                        <select id="selectLengthOfPasswords" name="selectLengthOfPasswords">
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                        </select>
+                </div>
+                <div id="multiPassBtn" class="text-center">
+                    <button id="multiplePassBtn" type="button" class="generatePassBtnActive" value="Generate Passwords" disabled>Generate Passwords</button>
+                </div>
+
+                <div  class="text-center copySaveButtons">
+                    <button id="copyClipboard" class="smallBtnDisabled" value="copyClipboard2" disabled>Select All</button>
+                    <button id="saveToFile"    class="smallBtnDisabled" value="saveToFile2" disabled>Save To File</button>
+                </div>
+
+                <!--div id="ad">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:320px;height:100px"
+                         data-ad-client="ca-pub-3295456445804585"
+                         data-ad-slot="1514707750"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+                <!--<div id="tips-container">
+                <h3 id="tips">Password Safety Tips</h3>
+                    <ul>
+                        <li>Passwords should at least contain lowercase letters (a - z), uppercase letters (A - Z), and integers (0 - 9)</li>
+                        <li>Stronger passwords should be at least 16 characters in length and contain upper & lowercase letters, numbers, and symbols</li>
+                        <li>Only use a password once, and only on one website. Never reuse a password.</li>
+                        <li>Change passwords every 3 - 6 months</li>
+                        <li>Never email, text message, or send passwords over the internet</li>
+                        <li>Store passwords in an safe manner (such as on a protected external hard drive) and not on the cloud</li>
+                    </ul>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer" class="footer primaryColorTheme">
+        <div class="container">
+            <h5 class="text-center">FastPasswordGenerator.com ©2015</h5>
+            <h6 id="disclaimer">
+                By using FastPassWordGenerator.com, you acknowledge that any and all passwords generated by yourself from this site will be used at your own risk.
+                Furthermore, you agree that FastPassWordGenerator.com and its creators cannot, and will not be held liable for any personal losses, damages, or injuries of any kind whatsoever
+                incurred by yourself from your use of this site. Passwords are not copied, saved, or stored by FastPasswordGenerator.com. For any questions or concerns send an email
+                with the header "fastpass" to appsynthtech@gmail.com
+            </h6>
+        </div>
+    </footer>
+
+</div>
+<script src="js/jscript_test.js"></script>
+<script src="js/generator.js"></script>
+<script src="js/FileSaver.js"></script>
+<script src="js/themeMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/*Ocean*/
+button{
+    color:#fff;
+    background-color:#061826;
+    border:none;
+    box-shadow: 0 3px 5px #344152;
+}
+
+#themeMenuBtn{
+    border:none;
+}
+
+#themeMenuBtn > div{
+    background: #061826;
+}
+
+.primaryColorTheme{
+    color:#FFFFFF;
+    background:#D32F2F;
+}
+
+.secondaryColorTheme{
+    background:#B71C1C;
+    color:#FFFFFF;
+}
+
+.accentColorTheme{
+    Background:#B71C1C;
+}
+
+.textDark{
+    color:#061826;
+}
+.textLight{
+    color:#ffffff;
+}
+
+.col1Theme{
+    color:#061826;
+    background-color:#EF9A9A;
+}
+
+.col2Theme{
+    color:#061826;
+    background-color:#FFCDD2;
+}

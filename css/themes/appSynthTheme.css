@@ -1,0 +1,46 @@
+/*AppSynth*/
+button{
+    color:#fff;
+    background-color:#061826;
+    border:none;
+    box-shadow: 0 3px 5px #344152;
+}
+
+#themeMenuBtn{
+    border:none;
+}
+
+#themeMenuBtn > div{
+    background: #fff;
+}
+
+.primaryColorTheme{
+    color:#fff;
+    background:#388E3C;
+}
+
+.secondaryColorTheme{
+    background:#1B5E20;
+    color:#ffffff;
+}
+
+.accentColorTheme{
+    Background:#B71C1C;
+}
+
+.textDark{
+    color:#061826;
+}
+.textLight{
+    color:#ffffff;
+}
+
+.col1Theme{
+    color:#061826;
+    background-color:#A5D6A7;
+}
+
+.col2Theme{
+    color:#061826;
+    background-color:#C8E6C9;
+}

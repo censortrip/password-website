@@ -1,0 +1,88 @@
+/*Indigo*/
+button{
+    color:#fff;
+    background-color:#061826;
+    border:none;
+    box-shadow: 0 3px  4px #000;
+
+}
+
+button:hover:enabled{
+    color:#FFF;
+    background:#303F9F;
+    /*
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    */
+}
+
+header{
+    box-shadow: 0px 4px 4px #344152;
+}
+
+#themeMenuBtn{
+    border:none;
+}
+
+#themeMenuBtn > div{
+    background: #FFFFFF;
+}
+
+#cp{
+    box-shadow: 0 10px 15px #061826;
+}
+
+.generatePassBtnActive:before{
+    color:#FFFFFF;
+    background-color:#061826;
+}
+
+/*this gives the impression of button being pressed on click*/
+.generatePassBtnActive:active{
+    box-shadow: 0 2px 2px #344152;
+    padding-top:3px;
+}
+
+.generatePassBtnDisabled{
+    color:#999999;
+    background-color:#222222;
+}
+
+.primaryColorTheme{
+    color:#FFFFFF;
+    background:#3F51B5;
+}
+
+.secondaryColorTheme{
+    color:#FFFFFF;
+    background:#303F9F;
+    border:none;
+    box-shadow: 0px 2px 3px #000;
+}
+
+.accentColorTheme{
+    Background:#B71C1C;
+}
+
+.textDark{
+    color:#061826;
+}
+.textLight{
+    color:#ffffff;
+}
+
+.col1Theme{
+    color:#061826;
+    background-color:#C5CAE9;
+}
+
+.col2Theme{
+    color:#061826;
+    background-color:#E8EAF6;
+}
+
+#disclaimer{
+    color:#fff;
+}
+

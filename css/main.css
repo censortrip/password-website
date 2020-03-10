@@ -1,0 +1,470 @@
+html {
+  position: relative;
+  height: 100%;	
+  min-width:320px;
+}
+
+body{
+  font-family:'Roboto', sans-serif;
+  min-width:320px;
+  background:#fff;
+}
+
+button:focus{
+	outline:0;
+}
+
+h2,h3,h4{
+	font-family: 'Fredoka One', cursive;
+}
+
+#cp{
+    position:fixed;
+    left:-150px;
+    top:100px;
+    width:150px;
+    height:700px;
+    transition: left 0.3s linear 0s;
+}
+
+header{	
+	position:relative; /*needed for z-index*/
+	z-index:2;
+	max-width:1920px;
+	margin: 0 auto;
+	height:75px;
+}
+
+#logo{
+	margin-top:20px;	
+}
+
+#themeMenuBtn{
+    width:50px;
+    height:50px;
+    position:relative;
+    z-index:2;
+    float:left;
+    padding:6px 2px 0 2px;
+    margin: 13px 0 0 50px;
+    cursor: pointer;
+}
+
+#themeMenuBtn > div{
+    width: 75%;
+    height: 5px;
+    margin: 5px 0 5px 6px;
+    border-radius:4px;
+}
+.themeBtn{
+    width:75px;
+    height:75px;
+    margin-bottom:15px;
+    border:solid 1px #000;
+    box-shadow: 0 0 5px #000;
+}
+
+.themeBtn:hover{
+    border:solid 1px #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+#indigo{
+    background:#303F9F;
+    color:#fff;
+}
+
+#crimson{
+    background:#D32F2F;
+    color:#000;
+}
+
+#ocean{
+    background:#00796B;
+    color:#fff;
+}
+#pumpkin{
+    background:#F57C00;
+    color:#000;
+}
+
+#boring{
+    background:#fff;
+    color:#000;
+}
+#violet{
+    background:#7B1FA2;
+    color:#fff;
+}
+
+#appSynth{
+    background:#388E3C;
+    color:#fff;
+}
+
+#main-content{
+	font-family:'Roboto', sans-serif;
+	width:100%;
+	max-width:1920px;
+	min-height:100%;
+	font-size:1.3em;
+	height:85%;
+}
+
+#column_container{
+	text-align:center;	
+}
+
+#passwordText{	
+	height: 65px;
+	font-size:1.25em;
+	letter-spacing:2px;
+	width: 65%;
+    border:none;
+}
+
+select{	
+	border:none;
+	box-shadow: 2px 2px 2px #344152;
+}
+
+select:focus{outline:0;}
+
+#checkboxes{
+	display:inline-block;
+	margin:0 auto;
+}
+
+/*this setup is needed to ensure proper font display for labels*/
+.labels{
+	font-weight:normal;
+	font-size:1em;
+}
+
+.generatePassBtnActive{
+	height: 65px;
+	width: 65%;
+}
+
+.generatePassBtnDisabled{
+	height: 65px;
+	width: 65%;
+}
+
+#play-badge{
+	width:100%;
+	text-align:center;
+}
+
+#google_play_badge{
+	margin-top:25px;
+}
+
+#ad{
+	margin-top:15px;
+	text-align:center;
+}
+
+.sharedColumnStyles{
+	position:relative;
+	z-index:1;
+	min-height:850px;
+}
+
+#col1{		
+	padding-top:25px;
+}
+
+#col2{
+	padding:25px;
+	text-align:left;
+}
+
+#multiplePasswords{
+	display:block;
+	text-align:center;
+	margin-bottom:25px;
+}
+
+#multiplePasswordWindow{
+	display:block;
+	text-align:center;
+	width:320px;
+	margin:0 auto;
+	height:150px;	
+}
+
+#multipassBox{
+	text-align:center;
+	margin-bottom:20px;
+}
+
+textarea{
+	resize:none;
+    overflow: auto;
+    outline: none;
+}
+
+.copySaveButtons{
+	margin-top:20px;
+}
+
+
+.smallBtnDisabled{	
+	color:#999999;
+	background-color:#222222;	
+	padding:10px;
+	border:none;
+
+}
+
+.smallBtnActive{		
+	padding:10px;
+	border:none;
+	box-shadow: 0 2px 5px #000;
+}
+
+#tips{
+	margin-bottom:25px;	
+}
+
+#tips-container{
+	max-width:80%;
+	margin:0 auto;	
+	text-align:center;
+}
+
+#tips-container ul{
+	display:inline-block;
+	text-align:left;
+}
+
+li{
+	margin-bottom: 10px;
+}
+
+.footer {
+    position:relative;
+    z-index:2;
+    font-size:2px;	
+    margin:0 auto;
+    max-width:1920px;
+    min-height:100%;
+    height:130px;  
+    box-shadow: 0 -2px 2px #000;
+}
+
+#disclaimer{
+	color:#e0f7ff;
+	width:75%;
+	margin:0 auto;
+}
+	
+#script-message{
+	color:#344152;
+}
+
+/****************************START MEDIA QUERIES**********************************/
+
+/*START extra small devices*/
+@media (max-width:340px){
+	
+body{
+	font-size:1em;
+}
+		
+#logo{
+	font-size:2.2em;
+	margin-top:25px;
+}
+	
+#col1{
+	height:700px;
+}
+			
+#passwordText{
+	font-size:1em;
+	width: 85%;
+}
+	
+#generatePassBtn{
+	width: 85%;
+}
+	
+#col2{
+	height:500px;
+	padding:20px;
+}
+
+#tips{
+	margin: 10px auto 15px auto;
+}
+	
+#tips-container{
+	max-width:100%;
+}
+		
+.footer{
+	height:325px;
+	padding-top:10px;
+}	
+}/*END extra small devices*/
+
+/*START small devices*/
+@media (min-width:341px) and (max-width:410px){	
+	
+#logo{
+	font-size:1.6em;
+	margin-top:25px;
+}
+	
+#passwordText{
+	font-size:1em;
+	width: 85%;
+}
+	
+.labels{
+	font-size: .8em;	
+}
+	
+#generatePassBtn{
+	width: 85%;	
+}	
+
+#col2{
+	height:860px;
+}
+
+#tips-container{
+	max-width:100%;
+}
+	
+.footer{
+	height:275px;
+	padding-top:10px;
+}	
+	
+#disclaimer{
+	width: 80%;
+}		
+}/*END small devices*/
+
+/*START in between small and medium*/
+@media (min-width:411px) and (max-width:427px) {
+	
+#logo{
+	font-size:1.7em;
+	margin-top:25px;
+}
+	
+#passwordText{
+	font-size:1em;
+	width: 85%;
+}
+		
+#generatePassBtn{
+	width: 85%;
+}	
+	
+#col2{
+	height:700px;
+}
+
+#tips-container{
+	max-width:100%;
+}
+	
+.footer{
+	height:275px;
+	padding-top:10px;
+}
+}/*END in between small and medium*/
+
+/*START phablet*/
+@media (min-width:428px) and (max-width:491px){	
+	
+#logo{
+	font-size:1.8em;
+	margin-top:25px;
+}
+	
+#passwordText{
+	font-size:1em;
+	width: 85%;	
+}
+	
+#generatePassBtn{
+	width: 85%;			
+}	
+		
+#col2{
+	height:660px;
+}
+
+#tips-container{
+	max-width:100%;
+}
+
+.footer{
+	height:250px;
+	padding:10px;
+}	
+}/*END phableet*/
+
+/*START small tablet*/
+@media (min-width:492px) and (max-width:768px){
+
+#passwordText{
+	font-size:1em;
+	width: 85%;	
+}
+	
+#generatePassBtn{
+	width: 85%;		
+}	
+	
+#col2{
+	height:625px;
+}
+	
+#tips-container{
+	max-width:100%;
+}
+	
+.footer{
+	height:230px;
+	padding:10px;
+}
+}/*END small tablet*/
+
+/*START large tablets/small laptops*/
+@media (min-width:769px) and (max-width:1200px) {
+	
+#passwordText{
+	font-size:1em;	
+	width:85%;
+}
+	
+#col1{
+	height:900px;	
+}
+
+#col2{
+	height:900px;	
+}
+
+#generatePassBtn{
+	width:85%;	
+}	
+		
+.footer{
+	height:150px;
+	padding:10px;
+}
+}/*END large tablets/small laptops*/
+
+
+
+
+
+
