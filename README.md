@@ -9,7 +9,11 @@
 ---
 
 <p align="center"><img src="images/screenshot1.PNG" max-width="600px"></p>
+
 ---
+
 <p align="center"><img src="images/sreenshot2.PNG" max-width="600px"></p>
+
 ---
+
 <p align="center"><img src="images/screenshot3.PNG" max-height="600px"></p>
