@@ -4,4 +4,4 @@
 
 **Some of the technologies used were Html, Css, javascript, Node, Java**
 
-<img src="images/screenshot1.png">
+<img src="images/screenshot1.PNG">
