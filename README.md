@@ -1,8 +1,8 @@
 # Fast Password Generator (2015)
 
-**This simple responsive site contains a password generator that I created in 2015 for personal use. In addition to this website, I also created version for node js and an Android application. The Android app was available on the Google Play store for around 2 years but ulitmately removed it because Android app programming was not my cup of tea.**
+**This simple responsive site contains a password generator that I created in 2015 for personal use. It featured single and multiple password generation as well as different themes. Some of the technologie used were** 
 
-**Some of the technologies used were Html, Css, javascript, Node, Java**
+**In addition to this barbones site, I also created version with node js as well as an Android application. The Android app was available on the Google Play store for around 2 years but I ulitmately removed it because Android app programming was not my cup of tea.**
 
 [Visit Site](https://sbullard.github.io/password-website/)
 
