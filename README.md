@@ -3,7 +3,9 @@
 
 **I also created Android and node js apps modeled after the web version. The Android app was available on the Google Play store for around 2 years until I removed it.**
 
-## [Visit Site](https://sbullard.github.io/password-website/)
+### [Visit Site](https://sbullard.github.io/password-website/)
+
+</br>
 
 <p align="center"><img src="images/screenshot1.PNG" max-width="600px"></p>
 
