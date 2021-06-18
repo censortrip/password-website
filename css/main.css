@@ -143,12 +143,12 @@ select:focus{outline:0;}
 
 .generatePassBtnActive{
 	height: 65px;
-	max-width: 500px;
+	width: 300px;
 }
 
 .generatePassBtnDisabled{
 	height: 65px;
-	max-width: 500px;
+	width: 300px;
 }
 
 #play-badge{
